@@ -1,7 +1,7 @@
-::v1 of script to update config file
-::names of machines to be updated are hardcoded into the script
-::also requires Enable-PSremoting on both client and server machines via GP
-::I'll push out a new update today that reads computers from a query on the AD itself and does not need ::hardcoding of machine list
+#v1 of script to update config file
+#names of machines to be updated are hardcoded into the script
+#also requires Enable-PSremoting on both client and server machines via GP
+#I'll push out a new update today that reads computers from a query on the AD itself and does not need hardcoding of machine list
 
 
 $machinesToBeUpdated = @("exComputer1","exComputer2","exComputer3","exComputer4");
