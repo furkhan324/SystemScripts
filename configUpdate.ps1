@@ -15,7 +15,7 @@ $cred = new-object -typename System.Management.Automation.PSCredential `
 
          foreach ($machine in $machinesToBeUpdated) {
 			Invoke-Command -computerName $machine -ScriptBlock { 
-				copy \\<UNC_PATH_TO_SHARED_FILE\newConfigFile.CONFIG C:\<LOCAL_PATH_TO_OLD_FILE>\oldConfigFile.CONFIG
+				copy \\<UNC_PATH_TO_SHARED_FILE>\newConfigFile.CONFIG C:\<LOCAL_PATH_TO_OLD_FILE>\oldConfigFile.CONFIG
 
 			 } -credential $cred
 
