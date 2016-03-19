@@ -8,3 +8,4 @@ Will be pushing out config update script that reads machine list from AD itself 
 dnf
 f
 f
+f
